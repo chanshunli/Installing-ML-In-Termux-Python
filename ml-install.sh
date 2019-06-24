@@ -131,7 +131,15 @@ pip install matplotlib
 pip install pandas
 pip install scikit-learn
 
-sh ml-install.sh
+## sh ml-install.sh
+
+### 安装matplotlib的时候的操作
+apt install clang python python-dev fftw libzmq libzmq-dev freetype freetype-dev libpng libpng-dev pkg-config
+ln -s /data/data/com.termux/files/usr/include/freetype2/freetype /data/data/com.termux/files/usr/include/freetype
+ln -s /data/data/com.termux/files/usr/include/freetype2/ft2build.h /data/data/com.termux/files/usr/include/
+LDFLAGS=" -lm -lcompiler_rt" pip install numpy matplotlib pandas jupyter
+
+###
 
 echo "${Pur}Instructions to Use :";
 echo "";
